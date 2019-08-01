@@ -1,0 +1,158 @@
+@import '_reset.scss';
+@import url('https://fonts.googleapis.com/css?family=Alegreya:700|Roboto|Roboto+Condensed&display=swap');
+
+$primary-color: rgba(233, 233, 233, 0.8);
+$secondary-color: rgba(220, 220, 220, 0.9);
+$background-color: rgba(0, 0, 0, .2);
+$secondary-background-color: rgba(240, 240, 240, 0.95);
+$font-color: rgb(104, 104, 104);
+$font1: 'Alegreya';
+$font2: 'Roboto Condensed';
+$font3: 'Roboto';
+
+body {
+    font-family: $font3, sans-serif;
+    color: $secondary-color;
+    height: 100vh;
+    background-image: url(../assets/background.jpg);
+    background-position-y: 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+header {
+    background-color: $background-color
+}
+
+.flex-container {
+    position: fixed;
+    width: 98.5%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    padding: 1rem;
+    height: 8%;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+        padding-left: 1rem;
+
+        h1 {
+            align-self: flex-start;
+            font-family: $font1, sans-serif;
+            color: $primary-color;
+            font-size: 3.3rem;
+            padding: auto;
+        }
+
+        h3 {
+            font-family: $font2, sans-serif;
+            font-size: 1.3rem;
+            color: $secondary-color;
+            padding-top: .5rem;
+        }
+    }
+
+
+    .address {
+        align-items: center;
+        font-size: 1.3rem;
+        padding-right: 1rem;
+
+        a {
+            color: $secondary-color;
+            text-decoration: none;
+            padding-left: .5rem;
+            padding-right: .5rem;
+            vertical-align: middle;
+            font-size: 2.45rem;
+
+            &:hover {
+                color: scale-color($secondary-color, $lightness: 30%);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.5em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: $font2, sans-serif;
+    font-size: .9rem;
+    background-color: $background-color;
+    color: $primary-color;
+    text-align: center;
+    transition: all 0.2s;
+    border-radius: 7px;
+    outline: 0;
+}
+
+button:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-me,
+.recomendation,
+.guestbook {
+    position: absolute;
+    margin-top: auto;
+    margin-bottom: auto;
+    transform: translateY(300%);
+    background-color: $background-color;
+    transition: all 0.5s;
+    height: 75vh;
+    width: 95vh;
+    border-radius: 8px;
+}
+
+.open {
+    transform: translateY(80%)
+}
+
+.about-me-box,
+.recomendation-box,
+.guestbook-box {
+    box-shadow: 5px 5px 5px rgb(57, 57, 57);
+    border-radius: 8px;
+    margin: 8%;
+    background: $secondary-background-color;
+    height: 80%;
+    color: $font-color;
+    overflow: auto scroll;
+    overflow-x: hidden;
+
+    h2 {
+        padding: 2.5rem;
+        text-align: center;
+        font-size: 2rem;
+        font-family: $font2, sans-serif;
+    }
+
+    p {
+        padding: 0 10%;
+        text-align: justify;
+        line-height: 1.5;
+
+        &:last-of-type {
+            margin-bottom: 5%;
+        }
+    }
+}
