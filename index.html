@@ -17,6 +17,9 @@
                 Coming...
             </h1>
             <img src="./assets/soon.gif" alt="Soon">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dpxIZstD_bI" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
     </section>
     <header class="flex-container">
@@ -39,7 +42,16 @@
             <div class="about-me-box">
                 <h2>About me</h2>
                 <p>
-                    Hello! I was born and raised in Venezuela and I came to the US when I was 14 years old. Not knowing
+                    Hello! I'm a software developer who is going through Flatiron Schools and is looking for a job in
+                    the Denver area. I enjoy losing track of time coding, playing games, climbing things, and long walks
+                    on the beach.
+                </p>
+                <br>
+                <h3 id="h3">Full Bio</h3>
+                <br>
+                <p>
+                    Hello again! So, I was born and raised in Venezuela and I came to the US when I was 14 years old.
+                    Not knowing
                     how to speak english very well, I struggled through high school. But eventually I finished it, made
                     some friends, and was actually able to picture living in the US instead of constantly wanting to go
                     back home.
@@ -74,15 +86,13 @@
                 </p>
             </div>
         </section>
-        <section class="guestbook open">
+        <section class="guestbook">
             <div class="guestbook-box">
                 <h2>Guestbook</h2>
                 <div class="guestbook-body">
                     <form method="post">
-                        <label for="name">Name:</label>
                         <input id="name" type="text" name="name" length="50px" placeholder="Display name">
                         <br>
-                        <label for="message">Message:</label>
                         <div><textarea id="message" name="message" placeholder="Leave a message" cols="40"
                                 rows="2"></textarea>
                             <button type="submit">
@@ -90,7 +100,9 @@
                             </button>
                         </div>
                     </form>
-                    <ul></ul>
+                    <h3> All Entries</h3>
+                    <ul id="ul">
+                    </ul>
                 </div>
             </div>
         </section>

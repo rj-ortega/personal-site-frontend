@@ -63,7 +63,7 @@ body {
 .modal {
   position: absolute;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   width: 100%;
   height: 100%;
@@ -235,13 +235,12 @@ button:hover {
   flex-direction: column;
   justify-content: space-around;
   text-align: left;
-  padding-left: 20%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
   outline: none; }
   .guestbook-body form {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     text-align: left; }
     .guestbook-body form * {
       padding-bottom: 5px; }
@@ -265,10 +264,36 @@ button:hover {
   .guestbook-body form #name {
     width: 40%; }
   .guestbook-body form #message {
-    width: 80%; }
+    width: 100%; }
   .guestbook-body form div {
     display: flex; }
-    .guestbook-body form div i {
-      padding-left: 2rem; }
+    .guestbook-body form div button {
+      margin-left: 2rem;
+      height: 30px;
+      width: 34px;
+      padding-bottom: 0; }
+      .guestbook-body form div button i {
+        padding-bottom: 0px;
+        font-size: 25px; }
+  .guestbook-body h3 {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: .5rem;
+    font-size: 1.2rem; }
+  .guestbook-body ul {
+    padding-top: 1rem; }
+    .guestbook-body ul p {
+      padding: 0; }
+
+.entry-user {
+  font-style: italic; }
+
+#h3 {
+  font-size: 1.4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.fa-times-circle:before {
+  color: #b83838; }
 
 /*# sourceMappingURL=style.css.map */
