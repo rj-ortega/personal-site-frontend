@@ -11,18 +11,26 @@
 </head>
 
 <body>
+    <section class="modal">
+        <div>
+            <h1>
+                Coming...
+            </h1>
+            <img src="./assets/soon.gif" alt="Soon">
+        </div>
+    </section>
     <header class="flex-container">
         <section class="title">
-            <h1>Ricardo Ortega</h1>
+            <h1 class="whats-my-name">Ricardo Ortega</h1>
             <h3 class="subtitle">Full-Stack Software Developer</h3>
         </section>
         <address class="address">
-            <button id="about-me">About me</button>
-            <button id="guestbook">Guestbook</button>
-            <button id="send-recomendation">Send Recomendation</button>
-            <button id="recomendation">Recomendations</button>
-            <a class="fab fa-linkedin fa-lg" href="https://www.linkedin.com/in/rj-ortega/"></a>
-            <a class="fab fa-github-square fa-lg" href="https://github.com/rj-ortega"></a>
+            <button id="about-me" title="Learn more!">About me</button>
+            <button id="guestbook" title="Leave me a message!">Guestbook</button>
+            <button id="hobbies" title="Pastimes and adventures!">Hobbies</button>
+            <button id="playground" title="Coding projects">Playground</button>
+            <a title="LinkedIn" class="fab fa-linkedin fa-lg" href="https://www.linkedin.com/in/rj-ortega/"></a>
+            <a title="Github" class="fab fa-github-square fa-lg" href="https://github.com/rj-ortega"></a>
         </address>
     </header>
     <section class="info">
@@ -31,44 +39,63 @@
             <div class="about-me-box">
                 <h2>About me</h2>
                 <p>
-                    Samuel L Ipsum
+                    Hello! I was born and raised in Venezuela and I came to the US when I was 14 years old. Not knowing
+                    how to speak english very well, I struggled through high school. But eventually I finished it, made
+                    some friends, and was actually able to picture living in the US instead of constantly wanting to go
+                    back home.
                 </p>
                 <br>
                 <p>
-                    Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit
-                    while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you
-                    this case, it don't belong to me. Besides, I've already been through too much shit this morning over
-                    this case to hand it over to your dumb ass. </p>
+                    The next step was to move on to college to pursue a career. It was quickly obvious that it wasn’t
+                    working out, I dropped out of college after a year and I assumed that I didn’t have an aptitude for
+                    Computer Science -- even though the reason I dropped out was because I never went to class and spent
+                    all my time playing intramural sports, partying and playing WoW. Little did I know, Computer Science
+                    was definitely the right choice, just the wrong time in my life. </p>
                 <br>
                 <p>
-                    Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my
-                    name
-                    printed on it? Do you see a little Asian child with a blank expression on his face sitting outside
-                    on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at
-                    a toy store. And you must think you're in a toy store, because you're here shopping for an infant
-                    named Jeb. </p>
+                    I ended up working at a supermarket, I hated it, so went back to college and actually graduated this
+                    time around, with a double major in Psychology and Modern Languages. I thought I was on the right
+                    path… Fast forward a few years. I bounced from job to job, tried different professions, tried
+                    working indoors, outdoors, full-time, seasonal jobs, even managaed to stay at a couple for almost
+                    two years... But so far, I only found happiness in hobbies: video games, camping, climbing, hiking,
+                    anime, travelling the world, etc.
+                </p>
                 <br>
                 <p>
-                    My money's in that office, right? If she start giving me some bullshit about it ain't there, and we
-                    got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna
-                    shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey,
-                    look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston
-                    or anybody else is in there, you the first motherfucker to get shot. You understand? </p>
-            </div>
-        </section>
-        <section class="recomendation">
-            <div class="recomendation-box">
-                <h2>Recomendations</h2>
-                <ul></ul>
+                    Eventually, I stumble into coding. My brother did a career switch through a code school so after
+                    trying to learn it out on my own, I decide it’s time to join a bootcamp as well and give it a real
+                    shot. Now, I’ve found a passion for coding and can’t wait to keep growing professionally, keep
+                    problem solving and
+                    face the many challenges ahead.
+                </p>
+                <br>
+                <p>
+                    Thanks for reading!
+                </p>
             </div>
         </section>
         <section class="guestbook open">
             <div class="guestbook-box">
                 <h2>Guestbook</h2>
-                <ul></ul>
+                <div class="guestbook-body">
+                    <form method="post">
+                        <label for="name">Name:</label>
+                        <input id="name" type="text" name="name" length="50px" placeholder="Display name">
+                        <br>
+                        <label for="message">Message:</label>
+                        <div><textarea id="message" name="message" placeholder="Leave a message" cols="40"
+                                rows="2"></textarea>
+                            <button type="submit">
+                                <i class="fas fa-plus-circle"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <ul></ul>
+                </div>
             </div>
         </section>
     </section>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script> NOT TODAY -->
     <script src="app.js"></script>
 </body>
 
